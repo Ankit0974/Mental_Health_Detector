@@ -64,31 +64,49 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running the Project
 
-### Backend
 
-```bash
-cd backend
-uvicorn main:app --reload
-```
+## ▶️ Running the Project (Docker + ngrok)
 
-### Frontend
-
-```bash
-cd frontend
-streamlit run app.py
-```
-
----
-
-## 🐳 Docker Setup
+### Step 1: Start the application using Docker
 
 ```bash
 docker compose up --build
 ```
 
+This will:
+
+* Start the FastAPI backend on port `8000`
+* Start the Streamlit frontend on port `8501`
+
 ---
+
+### Step 2: Expose the frontend using ngrok
+
+```bash
+ngrok http 8501
+```
+
+This generates a public URL that can be shared to access the application.
+
+---
+
+### Step 3: Access the application
+
+* Local: http://localhost:8501
+* Public: (ngrok URL)
+
+---
+
+### ⚠️ Notes
+
+* Ensure Docker is running before executing the command
+* ngrok is required for external access (especially behind NAT/firewall)
+* First run may take longer due to model loading
+
+---
+
+
 
 ## ☁️ Model Hosting
 
