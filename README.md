@@ -94,7 +94,7 @@ docker compose up --build
 
 The trained model is hosted on Hugging Face:
 
-👉 https://huggingface.co/ankitm101/mental-health-model
+👉 https://huggingface.co/ankitml01/mental-health-model
 
 ---
 
