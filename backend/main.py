@@ -8,8 +8,13 @@ app = FastAPI()
 MODEL_PATH = "../model/bert_model"
 
 # Load model + tokenizer
-tokenizer = BertTokenizer.from_pretrained(MODEL_PATH)
-model = BertForSequenceClassification.from_pretrained(MODEL_PATH)
+model = BertForSequenceClassification.from_pretrained(
+    "ankitml01/mental-health-model"
+)
+
+tokenizer = AutoTokenizer.from_pretrained(
+    "ankitml01/mental-health-model"
+)
 
 device = torch.device("cpu")  # Use CPU for API
 model.to(device)
