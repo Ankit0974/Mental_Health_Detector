@@ -82,10 +82,10 @@ Key improvements include:
 
 | Metric | Score |
 |---------|-------|
-| **Accuracy** | **97.00%** |
-| **Precision** | **97.00%** |
-| **Recall** | **97.00%** |
-| **F1 Score** | **97.00%** |
+| **Accuracy** | **97.31%** |
+| **Precision** | **97.34%** |
+| **Recall** | **97.24%** |
+| **F1 Score** | **97.29%** |
 | **ROC-AUC Score** | **0.9955** |
 
 ## ⚙️ Tech Stack
